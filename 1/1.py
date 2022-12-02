@@ -8,11 +8,11 @@ with open('input.txt', 'r') as f:
             continue
         cur.append(int(line.strip()))
     sums = []
-    print(nums)
     for calories in nums:
         l_sum = sum(calories)
         sums.append(l_sum)
     sums.sort() ## n log n
+    print(sums[-3:])
     ans = sums[-3:len(sums)]
     print(sum(ans))
 
