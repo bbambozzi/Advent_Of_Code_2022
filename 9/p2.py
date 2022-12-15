@@ -24,7 +24,7 @@ with open('input.txt', 'r') as f:
                 return ta
         return []
         
-    def move_head(increasex: int, increasey: int, times: int, tai: list, hea: list) -> None:
+    def move_head(increasex: int, increasey: int, times: int, tai: list, hea: list):
             for _ in range(times):
                 hea = (hea[0]  + increasex , hea[1] + increasey)
                 if not (pulse(tai[0], hea)):
