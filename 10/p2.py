@@ -11,7 +11,6 @@ def draw(cycle: int, x: int) -> None:
     start_row_cycle = ((cycle // 40) * 40) + 1
     crt_col = abs(cycle - start_row_cycle)
     if (abs(crt_col - x) < 2):
-        print('Sneed.')
         print(f'cycle {cycle} r{crt_row}, c{crt_col}')
         crt[crt_row][crt_col] = '#'
 
